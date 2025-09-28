@@ -467,7 +467,24 @@ Puedo ayudarte con:
             
             let errorContent = 'Lo siento, estoy teniendo problemas técnicos. ';
             
-            if (error.message.includes('429') || error.message.includes('insufficient_quota')) {
+            if (error.message.includes('401')) {
+                errorContent = `🔑 **Error de autenticación**
+
+La API key de OpenAI no es válida o ha expirado. 
+
+**Para obtener ayuda inmediata:**
+• 📞 Teléfono: +52 (646) 216-1815
+• 📧 Email: igsolarmx@gmail.com
+• 💬 WhatsApp: 6462161815
+
+Nuestros especialistas están listos para ayudarte con:
+• Evaluación energética personalizada
+• Cotizaciones de sistemas solares
+• Información técnica detallada
+• Asesoría en instalación
+
+¡Gracias por tu comprensión!`;
+            } else if (error.message.includes('429') || error.message.includes('insufficient_quota')) {
                 errorContent = `⚠️ **Límite de cuota excedido**
 
 El servicio de IA temporalmente no está disponible debido a límites de uso. 
@@ -499,6 +516,14 @@ Nuestros especialistas están listos para ayudarte con:
     }
 
     async callOpenAI(userMessage) {
+        // Verificar que la API key esté configurada
+        if (!this.apiKey || this.apiKey === 'YOUR_OPENAI_API_KEY_HERE') {
+            throw new Error('API key no configurada. Por favor, configura tu API key de OpenAI en config.js');
+        }
+
+        console.log('API Key:', this.apiKey.substring(0, 10) + '...');
+        console.log('API Key length:', this.apiKey.length);
+
         const messages = [
             { role: 'system', content: this.systemPrompt },
             ...this.messages.map(msg => ({
@@ -523,7 +548,9 @@ Nuestros especialistas están listos para ayudarte con:
         });
 
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            const errorText = await response.text();
+            console.error('Error response:', errorText);
+            throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
         }
 
         const data = await response.json();
