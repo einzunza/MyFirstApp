@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoEnergy - Energía Renovable y Sostenible</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>EcoEnergy</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Página Home -->
+    <section id="home" class="page active">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Energía Solar</span>
+                    <span class="title-line">Para un Futuro</span>
+                    <span class="title-line highlight">Sostenible</span>
+                </h1>
+                <p class="hero-description">
+                    Transformamos la energía del sol en soluciones innovadoras para hogares y empresas. 
+                    Únete a la revolución verde y reduce tu huella de carbono.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explorar Soluciones</button>
+                    <button class="btn btn-secondary">Solicitar Cotización</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="solar-panel-animation">
+                    <div class="panel"></div>
+                    <div class="sun-rays">
+                        <div class="ray ray-1"></div>
+                        <div class="ray ray-2"></div>
+                        <div class="ray ray-3"></div>
+                        <div class="ray ray-4"></div>
+                        <div class="ray ray-5"></div>
+                        <div class="ray ray-6"></div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="leaf leaf-1"><i class="fas fa-leaf"></i></div>
+                    <div class="leaf leaf-2"><i class="fas fa-leaf"></i></div>
+                    <div class="leaf leaf-3"><i class="fas fa-leaf"></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label">MW Generados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="stat-number" data-target="25000">0</div>
+                        <div class="stat-label">Árboles Salvados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página Products -->
+    <section id="products" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Nuestros Productos</h2>
+                <p>Soluciones innovadoras en energía renovable</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Paneles Solares</h3>
+                        <p>Paneles fotovoltaicos de alta eficiencia para hogares y empresas.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Eficiencia del 22%</li>
+                            <li><i class="fas fa-check"></i> Garantía 25 años</li>
+                            <li><i class="fas fa-check"></i> Resistente a granizo</li>
+                        </ul>
+                        <div class="product-price">Desde $2,500</div>
+                        <button class="btn btn-primary">Más Información</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-battery-half"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Sistemas de Almacenamiento</h3>
+                        <p>Baterías de litio para almacenar energía solar durante la noche.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Capacidad 10-20 kWh</li>
+                            <li><i class="fas fa-check"></i> Vida útil 10 años</li>
+                            <li><i class="fas fa-check"></i> Instalación simple</li>
+                        </ul>
+                        <div class="product-price">Desde $8,000</div>
+                        <button class="btn btn-primary">Más Información</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Turbinas Eólicas</h3>
+                        <p>Generadores eólicos residenciales para complementar la energía solar.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Potencia 1-5 kW</li>
+                            <li><i class="fas fa-check"></i> Silencioso</li>
+                            <li><i class="fas fa-check"></i> Diseño aerodinámico</li>
+                        </ul>
+                        <div class="product-price">Desde $15,000</div>
+                        <button class="btn btn-primary">Más Información</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3>Estaciones de Carga</h3>
+                        <p>Cargadores para vehículos eléctricos alimentados por energía solar.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Carga rápida</li>
+                            <li><i class="fas fa-check"></i> Compatible universal</li>
+                            <li><i class="fas fa-check"></i> App móvil</li>
+                        </ul>
+                        <div class="product-price">Desde $3,500</div>
+                        <button class="btn btn-primary">Más Información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página Services -->
+    <section id="services" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones completas para tu transición energética</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Evaluación Energética</h3>
+                    <p>Análisis completo de tu consumo energético y potencial de ahorro con energía solar.</p>
+                    <ul>
+                        <li>Auditoría energética gratuita</li>
+                        <li>Simulación de ahorros</li>
+                        <li>Recomendaciones personalizadas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Instalación Profesional</h3>
+                    <p>Instalación certificada por técnicos especializados con garantía completa.</p>
+                    <ul>
+                        <li>Instalación en 1-2 días</li>
+                        <li>Certificación eléctrica</li>
+                        <li>Garantía de instalación</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Mantenimiento</h3>
+                    <p>Servicio de mantenimiento preventivo para optimizar el rendimiento de tu sistema.</p>
+                    <ul>
+                        <li>Limpieza de paneles</li>
+                        <li>Revisión técnica</li>
+                        <li>Monitoreo remoto</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Monitoreo Inteligente</h3>
+                    <p>Sistema de monitoreo en tiempo real para optimizar tu producción energética.</p>
+                    <ul>
+                        <li>Dashboard en tiempo real</li>
+                        <li>Alertas automáticas</li>
+                        <li>Reportes detallados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página About -->
+    <section id="about" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Acerca de Nosotros</h2>
+                <p>Líderes en energía renovable desde 2010</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nuestra Misión</h3>
+                    <p>
+                        En EcoEnergy, creemos que el futuro energético debe ser sostenible y accesible para todos. 
+                        Desde nuestros inicios en 2010, hemos trabajado incansablemente para democratizar el acceso 
+                        a la energía solar y otras fuentes renovables.
+                    </p>
+                    
+                    <h3>Nuestra Visión</h3>
+                    <p>
+                        Ser la empresa líder en soluciones de energía renovable en Latinoamérica, contribuyendo 
+                        significativamente a la reducción de emisiones de carbono y al desarrollo de comunidades 
+                        más sostenibles.
+                    </p>
+
+                    <h3>Nuestros Valores</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Sostenibilidad</h4>
+                            <p>Comprometidos con el medio ambiente</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Confianza</h4>
+                            <p>Transparencia en cada proyecto</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovación</h4>
+                            <p>Tecnología de vanguardia</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Compromiso</h4>
+                            <p>Servicio al cliente excepcional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">13+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Técnicos Certificados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Países Atendidos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página Contact -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Contacto</h2>
+                <p>¿Listo para comenzar tu transición energética?</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. Solar 123, Ciudad Verde<br>México, CP 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@ecoenergy.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun - Vie: 8:00 - 18:00<br>Sáb: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="evaluation">Evaluación Energética</option>
+                                <option value="installation">Instalación</option>
+                                <option value="maintenance">Mantenimiento</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoEnergy</span>
+                    </div>
+                    <p>Transformando el futuro con energía renovable y sostenible.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Evaluación Energética</a></li>
+                        <li><a href="#">Instalación Solar</a></li>
+                        <li><a href="#">Mantenimiento</a></li>
+                        <li><a href="#">Monitoreo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +52 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ecoenergy.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Solar 123, Ciudad Verde</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoEnergy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
