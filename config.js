@@ -1,7 +1,7 @@
 // Configuración del ChatBot EcoEnergy
 // IMPORTANTE: Reemplaza 'YOUR_OPENAI_API_KEY_HERE' con tu API key real de OpenAI
 
-const CONFIG = {
+window.CONFIG = {
     OPENAI_API_KEY: 'YOUR_OPENAI_API_KEY_HERE', // Reemplaza con tu API key real
     SYSTEM_PROMPT: `#role Eres un experto en la venta e instalación de sistemas fotovoltaicos para uso residencial, comercial e industrial.
 
