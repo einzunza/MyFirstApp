@@ -465,9 +465,32 @@ Puedo ayudarte con:
             this.hideTyping();
             console.error('Error al llamar a OpenAI:', error);
             
+            let errorContent = 'Lo siento, estoy teniendo problemas técnicos. ';
+            
+            if (error.message.includes('429') || error.message.includes('insufficient_quota')) {
+                errorContent = `⚠️ **Límite de cuota excedido**
+
+El servicio de IA temporalmente no está disponible debido a límites de uso. 
+
+**Para obtener ayuda inmediata:**
+• 📞 Teléfono: +52 (646) 216-1815
+• 📧 Email: igsolarmx@gmail.com
+• 💬 WhatsApp: 6462161815
+
+Nuestros especialistas están listos para ayudarte con:
+• Evaluación energética personalizada
+• Cotizaciones de sistemas solares
+• Información técnica detallada
+• Asesoría en instalación
+
+¡Gracias por tu comprensión!`;
+            } else {
+                errorContent += 'Por favor, intenta de nuevo o contacta directamente con nuestro equipo al +52 (646) 216-1815.';
+            }
+            
             const errorMessage = {
                 type: 'bot',
-                content: 'Lo siento, estoy teniendo problemas técnicos. Por favor, intenta de nuevo o contacta directamente con nuestro equipo al +52 (555) 123-4567.',
+                content: errorContent,
                 timestamp: new Date()
             };
 
