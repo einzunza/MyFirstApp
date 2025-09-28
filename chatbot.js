@@ -4,7 +4,9 @@ class EcoEnergyChatBot {
         this.isOpen = false;
         this.messages = [];
         // Configuración del chatbot
+        console.log('CONFIG object:', window.CONFIG);
         this.apiKey = window.CONFIG?.OPENAI_API_KEY || 'YOUR_OPENAI_API_KEY_HERE';
+        console.log('API Key loaded:', this.apiKey ? this.apiKey.substring(0, 10) + '...' : 'NOT FOUND');
         this.systemPrompt = window.CONFIG?.SYSTEM_PROMPT || `#role Eres un experto en la venta e instalación de sistemas fotovoltaicos para uso residencial, comercial e industrial. 
 
 Tu objetivo es ayudar a los clientes a:
